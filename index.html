@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>To Do List</h1>
+      <p class="hint">Click "Add Todo" to create a new todo item.</p>
+      <p class="hint">Double click on the item to edit it.</p>
+      <p class="hint">Press 'Enter' to confirm.</p>
+      <p class="hint">Drag an item on the "Add Todo" button to delete it.</p>
+      <button id="add">Add Todo</button>
+      <div class="container">
+        <div id="todo">
+          <h3>To Do</h3>
+        </div>
+        <div id="done">
+          <h3>Done</h3>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts" defer></script>
+  </body>
+</html>

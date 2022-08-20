@@ -1,0 +1,100 @@
+:root {
+  --background: #0f0e17;
+  --headline: #fffffe;
+  --paragraph: #a7a9be;
+  --button: #ff8906;
+  --button-text: #fffffe;
+
+  --secondary: #f25f4c;
+  --tertiary: #e53170;
+
+  --standard-radius: 3px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: sans-serif;
+  background-color: var(--background);
+  color: var(--paragraph);
+}
+
+button {
+  padding: 0.8em 2em;
+  background-color: var(--button);
+  color: var(--button-text);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: var(--standard-radius);
+}
+
+.wrapper {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > * {
+  margin-top: 1em;
+}
+
+.hint {
+  line-height: 0.7em;
+}
+
+.hint:last-of-type {
+  margin-bottom: 1em;
+}
+
+/* To Do List */
+
+h1 {
+  text-align: center;
+  margin: 1em;
+  color: var(--headline);
+}
+
+.container {
+  border: 1px solid var(--headline);
+  display: flex;
+  border-radius: var(--standard-radius);
+}
+
+.container > * {
+  width: 50%;
+  margin: 0.4em;
+  padding: 1em;
+}
+
+.container h3 {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.todo-item {
+  padding: 0.5em 0.4em;
+  border: 1px solid var(--headline);
+  cursor: pointer;
+  border-radius: var(--standard-radius);
+  color: var(--paragraph);
+}
+
+:is(#done, #todo) .todo-item {
+  margin-top: 0.5em;
+}
+
+/* Big screems */
+
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1em;
+}
